@@ -36,6 +36,67 @@ body{
     font-family: 'Source Sans Pro', 'Roboto', serif;
 }
 
+/*---------------- style for loader------------*/
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+#loader-wrapper{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#loader .loader-box{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    animation: loaderanim .825s infinite linear;
+}
+
+#loader .loader-box:nth-child(1){
+    animation-delay: 0s;
+}
+
+#loader .loader-box:nth-child(2){
+    animation-delay: .275s;
+}
+
+#loader .loader-box:nth-child(3){
+    animation-delay: .55s;
+}
+
+@keyframes loaderanim{
+    0%{
+        transform: scale(1);
+        background-color: red;
+    }
+    50%{
+        transform: scale(1.275);
+        background-color: hsl(220, 100%, 78%);
+    }
+    100%{
+        transform: scale(1);
+        background-color: green;
+    }
+
+}
+
+/*  ---------------end of style for loader--------------*/
+
 #site-title{
     width: 100%;
     margin: auto;
