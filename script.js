@@ -113,7 +113,7 @@ function addTopics() {
 
                 //----------creating anchor element-----------
                 let a = document.createElement("a");
-                a.href = "Tancet website maker.html";
+                a.href = "Topics/" + mainTopicsName[i] + "/" + thirdTopics[k] + ".html";
                 a.textContent = thirdTopics[k];
                 console.log(a.href);
 
