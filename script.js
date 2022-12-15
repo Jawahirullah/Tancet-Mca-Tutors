@@ -147,6 +147,13 @@ function addTopics() {
         }
 
     }
+   
+    // After all the topics added to the page, we have to remove animation
+
+    let loaderAnim = document.getElementById("loader");
+    loaderAnim.style.animationPlayState = "paused";
+    loaderAnim.style.webkitAnimationPlayState = "paused";
+    loaderAnim.style.display = "none";
 }
 
 //----------end of logic for adding third topics-------------------
