@@ -7,9 +7,9 @@ var openedSecondTopic = null;
 const quantitative_aptitude = new Map([
 
    ["Number System", ["Divisibility Rule"]],
-   ["Hcf Lcm", ["abc"]],
-   ["Percentages", ["abc"]],
-   ["Ratios", ["abc"]],
+   ["Hcf Lcm", []],
+   ["Percentages", []],
+   ["Ratios", []],
    ["Averages", []],
    ["Interest", []],
    ["Profit and Loss", []],
