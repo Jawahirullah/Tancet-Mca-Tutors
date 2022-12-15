@@ -75,6 +75,7 @@ var sidebarData = [quantitative_aptitude, analytical_and_logical_reasoning, comp
 
 
 window.onload = function () {
+    console.log(window.location.pathname);
     initialize();
 }
 
