@@ -113,7 +113,7 @@ function addTopics() {
 
                 //----------creating anchor element-----------
                 let a = document.createElement("a");
-                a.href = "https://github.com/Jawahirullah/Tancet-Mca-Tutors/blob/0582f85d9a0619c16e3c99c246582d65b0b1325b/Topics/Quantitative%20Aptitude/Divisibility%20Rule.html";
+                a.href = "Tancet website maker.html";
                 a.textContent = thirdTopics[k];
                 console.log(a.href);
 
