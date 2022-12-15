@@ -7,9 +7,9 @@ var openedSecondTopic = null;
 const quantitative_aptitude = new Map([
 
    ["Number System", ["Divisibility Rule"]],
-   ["Hcf Lcm", []],
-   ["Percentages", []],
-   ["Ratios", []],
+   ["Hcf Lcm", ["abc"]],
+   ["Percentages", ["abc"]],
+   ["Ratios", ["abc"]],
    ["Averages", []],
    ["Interest", []],
    ["Profit and Loss", []],
@@ -70,7 +70,7 @@ const computer_awareness = new Map([
     
 ]);
 
-var mainTopicsName = ["Quantitative Aptitude", "Analytical and Logical Reasoning", "Computer Awarness"];
+var mainTopicsName = ["Quantitative Aptitude", "Analytical and Logical Reasoning", "Computer Awareness"];
 var sidebarData = [quantitative_aptitude, analytical_and_logical_reasoning, computer_awareness];
 
 
@@ -171,9 +171,14 @@ function addSidebarEvent() {
             iconElement = divElement.firstElementChild;
             listElement = divElement.parentElement;
         }
+       
+        console.log("icon Element : " + iconElement.nodeName);
+        console.log("div Element : " + divElement.nodeName);
+        console.log("list Element : " + listElement.nodeName);
         
 
         let rotationAngle = getRotationAngle(iconElement);
+        console.log("Rotation Angle : " + rotationAngle);
 
         if (rotationAngle == 0) {
             if (listElement.classList.contains("first-topics")) {
@@ -181,6 +186,8 @@ function addSidebarEvent() {
                 if (openedFirstTopic != null) {
                     closeFirstTopics(openedFirstTopic);
                 }
+               
+               console.log("First - topic clicked!");
 
                 iconElement.style.transform = "rotate(45deg)";
                 listElement.querySelector(".secondary-topics").style.maxHeight = "2000px";
@@ -196,6 +203,7 @@ function addSidebarEvent() {
                 if (openedSecondTopic != null) {
                     closeSecondTopics(openedSecondTopic);
                 }
+                console.log("Second Topic clicked");
 
                 iconElement.style.transform = "rotate(90deg)";
                 listElement.querySelector(".tertiary-topics").style.maxHeight = "2000px";
