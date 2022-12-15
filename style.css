@@ -632,6 +632,11 @@ body{
     --fs-sidebar-three: 1.1rem;
     --fs-content-p: 1.1rem;
 }
+    
+#loader-wrapper{
+    transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+}
 
 #site-title{
     padding: 26px 0 32px;
