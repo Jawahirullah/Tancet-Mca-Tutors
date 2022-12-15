@@ -114,7 +114,18 @@ function addTopics() {
 
                 //----------creating anchor element-----------
                 let a = document.createElement("a");
-                a.href = "../../../Topics/" + mainTopicsName[i] + "/"  +secondTopics[j] + "/" + thirdTopics[k] + ".html";
+               
+                let url = window.location.pathname;
+                let filename = url.substring(url.lastIndexOf('/') + 1);
+
+                if(filename == "" || filename == "index.html")
+                {
+                    a.href = "Topics/" + mainTopicsName[i] + "/"  +secondTopics[j] + "/" + thirdTopics[k] + ".html";
+                }
+                else{
+                    a.href = "../../../Topics/" + mainTopicsName[i] + "/"  +secondTopics[j] + "/" + thirdTopics[k] + ".html";
+                }
+               
                 a.textContent = thirdTopics[k];
 
                 li.appendChild(a);
