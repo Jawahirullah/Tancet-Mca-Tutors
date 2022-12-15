@@ -113,7 +113,7 @@ function addTopics() {
 
                 //----------creating anchor element-----------
                 let a = document.createElement("a");
-                a.href = "https://Jawahirullah/github.io/Tancet-Mca-Tutors/Topics/" + mainTopicsName[i] + "/" + thirdTopics[k] + ".html";
+                a.href = "https://Jawahirullah/github.io/Tancet-Mca-Tutors/blob/main/Topics/" + mainTopicsName[i] + "/" + thirdTopics[k] + ".html";
                 a.textContent = thirdTopics[k];
                 console.log(a.href);
 
