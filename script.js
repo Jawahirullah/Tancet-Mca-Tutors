@@ -113,7 +113,7 @@ function addTopics() {
 
                 //----------creating anchor element-----------
                 let a = document.createElement("a");
-                a.href = "Topics/" + mainTopicsName[i] + "/" + secondTopics[j] + "/" + thirdTopics[k] + ".html";
+                a.href = "../../../Topics/" + mainTopicsName[i] + "/"  +secondTopics[j] + "/" + thirdTopics[k] + ".html";
                 a.textContent = thirdTopics[k];
 
                 li.appendChild(a);
