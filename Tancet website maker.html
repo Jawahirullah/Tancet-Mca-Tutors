@@ -1,0 +1,351 @@
+<!doctype html><html><head> 
+  <title>Website maker</title> 
+  <meta name=viewport" content="width=device-width,initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+
+#btn-holder{
+    width:85%;
+    height: 12.5%;
+    box-shadow:inset 0 3px 4px rgba(0,0,0,.25);
+    background-color:green;
+    margin: 15px auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: lavender;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#btn-holder li{
+    height: 60%;
+    width: max-content;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: #ffffcc;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    padding: 10px;
+    min-width: max-content;
+    cursor: default;
+}
+
+#smalltfholder{
+    background-color:pink;
+    height: 12%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom:10px;
+}
+
+#smalltfholder button{
+    width: 13vw;
+    height: 50px;
+    border: none;
+    background-color:lavender;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+
+#smalltf{
+    width:70%;
+    height: 96%;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 0 0px 4px rgba(0,0,0,.25);
+}
+
+#largetfholder{
+    width: 98%;
+    height: 65%;
+    background-color: yellow;
+    margin: auto;
+    position: relative;
+}
+
+#largetf{
+    width:100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#copylargetf{
+    position:absolute;
+    top:5px;
+    right:5px;
+    background-color: pink;
+    border: none;
+    box-shadow:0px 2px 6px rgba(0,0,0,.46);
+    color: hsl(220, 31%, 31%);
+}
+
+textarea{
+    padding: 5px 10px;
+    line-height: 1.35rem;
+    color:hsl(220, 31%, 31%);
+    border: 1px solid grey;
+}
+
+#btn-holder li:active,#largetfholder button:active,#smalltfholder button:active{
+    background-color: #ffffcc;
+}
+
+#btn-holder li:hover,#largetfholder button:hover,#smalltfholder button:hover{
+    background-color: #ffffa0;
+}
+
+#btn-holder #a{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:blue;
+}
+
+#btn-holder #blue_bg{
+    background-color: lavender;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.149), inset 0 -2px 4px rgba(0, 0, 0, 0.149);
+
+}
+
+#btn-holder #box_header{
+    background-color: rgb(0, 157, 0);
+    color: white;
+    width: max-content;
+    white-space: nowrap; 
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#btn-holder #h1{
+    font-size: 2rem;
+    padding: 0 10px;
+    color: red;
+    font-weight: bold;
+}
+
+#btn-holder #h2{
+    font-size: 1.6rem;
+    padding: 2.5px 10px;
+    font-weight: bold;
+    color: red;
+}
+
+#btn-holder #h4{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#btn-holder #h5{
+    color:rgb(0, 157, 0);
+    text-decoration: underline;
+    font-weight:  bold;
+}
+
+#btn-holder #note{
+    border: 3px solid rgb(0, 157, 0);
+    font-weight: bold;
+}
+
+#btn-holder #ol, #btn-holder #p{
+    min-width: 60px;
+}
+
+#btn-holder #quote{
+    color: rgb(0, 157, 0);
+}
+
+#btn-holder #step{
+    background-color: red;
+    padding: 4px 6px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: var(--fs-content-p);
+    height: fit-content;
+}
+
+#btn-holder #underline{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 1.5px;
+}
+  </style>
+</head> 
+ <body> 
+  <ul id="btn-holder"> 
+   <li id="a">anchor</li> 
+   <li id="blue_bg">blue background</li> 
+   <li id="box_header">box header</li> 
+   <li id="expression">= expression</li>
+   <li id="full-page-name">Full Page Name as Folder/Name</li>
+   <li id="h1">Page Title</li> 
+   <li id="h2">Sub-header</li> 
+   <li id="h3">h3 is used as sub-header</li> 
+   <li id="h4">Third Header</li> 
+   <li id="h5">h5</li> 
+   <li id="icon_arrow"><span class="material-icons-round">chevron_right</span></li> 
+   <li id="icon_east"><span class="material-icons-round">east</span></li> 
+   <li id="img"><span class="material-icons-round">image</span></li> 
+   <li id="li">li</li> 
+   <li id="note">NOTE:</li> 
+   <li id="no_margin">No Margin Section</li>
+   <li id="ol">ol</li> 
+   <li id="p">p</li> 
+   <li id="page_location">page location</li> 
+   <li id="page_topic">page topic</li> 
+   <li id="quote">"quote"</li> 
+   <li id="section">section</li> 
+   <li id="step">step</li> 
+   <li id="steps">steps</li> 
+   <li id="subheader">subheader</li>
+   <li id="underline">underline</li>
+   <li id="ul">ul</li> 
+  </ul> 
+  <div id="smalltfholder"> 
+   <button id="newLine">New line</button> 
+   <textarea id="smalltf"></textarea> 
+   <button id="copysmalltf">copy</button> 
+  </div> 
+  <div id="largetfholder"> 
+   <textarea id="largetf"></textarea> 
+   <button id="copylargetf"><span class="material-icons-round">content_copy</span></button> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">
+
+var btnHolder=null,smalltf=null,largetf=null,copySmalltf=null,copyLargetf=null;
+
+const map = new Map([
+    ["a","\<a href=\" \"\>\<\/a\>"],
+    ["blue_bg","\<div class=\"blue-bg\"\>\<\/div\>"],
+    ["box_header","\<h3 class=\"box-header\"\>\<\/h3\>"],
+    ["expression","\<p class=\"expression\"\>\<\/p\>"],
+    ["full-page-name","\<span id=\"full-page-name\"\>Quantitative Aptitude\/Number System\/Unit Digit\<\/span\>"],
+    ["h1","\<h1 id=\"page-topic\"\>\<\/h1\>"],
+    ["h2","\<h2 class=\"sub-header\"\>\<\/h2\>"],
+    ["h3","\<h3\>\<\/h3\>"],
+    ["h4","\<h4\>\<\/h4\>"],
+    ["h5","\<h5\>\<\/h5\>"],
+    ["icon_arrow","\<span class=\"material-icons-round\"\>chevron_right\<\/span\>"],
+    ["icon_east","\<span class=\"material-icons-round icon\"\>east\<\/span\>"],
+    ["img","\<div class=\"img-holder\"\>\<img onclick=\"zoomInImage\(event\)\" src=\"image location here\" alt=\"image\"\/\>\<span onclick=\"zoomOutImage\(event\)\" class=\"material-icons-round zoom-out-button\"\>close\<\/span\>\<\/div\>"],
+    ["li","\<li\>\<\/li\>"],
+    ["note","\<div class=\"note\"\>\<span class=\"hint\"\>\<\/span\>\<\/div\>"],
+    ["no_margin","\<section class=\"no-margin\"\>\<\/section\>"],
+    ["ol","\<ol\>\<li\>\<\/li\>\<\/ol\>"],
+    ["p","\<p\>\<\/p\>"],
+    ["page_location","\<h2 id=\"page-location\"\>First Topic\<span class=\"material-icons-round\"\>chevron_right\<\/span\>Second Topic\<\/h2\>"],
+    ["page_topic","\<h1 id=\"page-topic\"\>\<\/h1\>"],
+    ["quote","\<span=\"quote\"\>\<\/span\>"],
+    ["section","\<section\>\<\/section\>"],
+    ["step","\<li class=\"step\" step=\"\"\>\<\/li\>"],
+    ["steps","\<ul class=\"steps\"\>\<li step=\"1\"\>\<\/li\>\<\/ul\>"],
+    ["subheader","\<h2 class=\"sub-header\"\>\<\/h2\>"],
+    ["ul","\<ul\>\<li\>\<\/li\>\<\/ul\>"],
+    ["underline","\<span class=\"underline\"\>\<\/span\>"]
+]);
+
+window.onload=function()
+{
+    btnHolder = document.getElementById("btn-holder");
+    smalltf = document.getElementById("smalltf");
+    largetf = document.getElementById("largetf");
+    copySmalltf = document.getElementById("copysmalltf");
+    copyLargetf = document.getElementById("copylargetf");
+    
+    addEvents();
+    writeTemplate();
+}
+
+function addEvents()
+{
+    btnHolder.addEventListener("click",function(evet){
+        writeSmallTf(event);
+    });
+    newLine.addEventListener("click",function(){
+        goToNewLine();
+    })
+    copySmalltf.addEventListener("click",function(event){
+        copyFromSmallTf();
+    },false);
+    copyLargetf.addEventListener("click",function(event){
+        copyFromLargeTf();
+    },false);
+}
+
+function writeSmallTf(event)
+{
+    let btn=event.target;
+    if(btn.nodeName == "UL")
+    {
+        return;
+    }
+    if(btn.nodeName != "LI")
+    {
+        btn = btn.parentElement;
+    }
+
+    let code=map.get(btn.id);
+    smalltf.value=code;
+
+}
+
+function copyFromLargeTf()
+{
+    largetf.focus();
+    largetf.select();
+    
+    document.execCommand('copy');
+}
+
+function copyFromSmallTf()
+{
+    smalltf.focus();
+    smalltf.select();
+    
+    document.execCommand('copy');
+}
+
+function writeTemplate()
+{
+    largetf.value = map.get("full-page-name") + "\n" + map.get("page_location") + "\n" + map.get("page_topic");
+}
+
+function goToNewLine()
+{
+    largetf.value += "\n";
+    largetf.focus();
+}
+
+
+</script>
+</body>
+</html>
