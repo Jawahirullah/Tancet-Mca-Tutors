@@ -155,7 +155,7 @@ function addTopics() {
     loaderAnim.style.animationPlayState = "paused";
     loaderAnim.style.webkitAnimationPlayState = "paused";
     loaderAnim.style.display = "none";
-    }, 1500);
+    }, 1000);
 }
 
 //----------end of logic for adding third topics-------------------
