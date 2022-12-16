@@ -294,7 +294,7 @@ body{
 
 #side-bar .tertiary-topics .third-topics a{
     text-decoration: none;
-    transition: all .15s;
+    transition: background-color .15s;
     display: inline-block;
     width: 100%;
     overflow: hidden;
