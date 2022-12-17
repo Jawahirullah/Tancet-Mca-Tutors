@@ -290,6 +290,10 @@ window.onload=function()
     copySmalltf = document.getElementById("copysmalltf");
     copyLargetf = document.getElementById("copylargetf");
     
+    window.onpopstate = function() {
+    alert("pop!");
+    }
+
     addEvents();
     writeTemplate();
 }
